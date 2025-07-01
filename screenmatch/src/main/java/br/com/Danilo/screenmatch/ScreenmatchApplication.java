@@ -3,6 +3,7 @@ package br.com.Danilo.screenmatch;
 import br.com.Danilo.Model.DadosEpisodio;
 import br.com.Danilo.Model.DadosSeries;
 import br.com.Danilo.Model.DadosTemporada;
+import br.com.Danilo.principal.Principal;
 import br.com.Danilo.service.ConsumoApi;
 import br.com.Danilo.service.ConverteDados;
 import org.springframework.boot.CommandLineRunner;
@@ -47,6 +48,11 @@ public class ScreenmatchApplication implements CommandLineRunner {
         }
 
         temporadas.forEach(System.out::println);
+
+        Principal menu = new Principal();
+
+        menu.exibiMenu();
+
 
     }
 }
